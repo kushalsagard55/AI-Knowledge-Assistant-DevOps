@@ -47,6 +47,13 @@ pipeline {
                 '''
             }
         }
+        stage('Build Docker Image') {
+            steps {
+                sh '''
+                    docker build -t ai-knowledge-assistant:latest .
+                '''
+            }
+        }
     }
 
     post {

@@ -12,7 +12,7 @@ pipeline {
         stage('Install CPU PyTorch') {
             steps {
                 sh '''
-                    python3 -m pip install --user \
+                    python3 -m pip install --break-system-packages \
                     torch \
                     --index-url https://download.pytorch.org/whl/cpu
                 '''

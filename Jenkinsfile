@@ -9,6 +9,12 @@ pipeline {
             }
         }
 
+        stage('Install CPU PyTorch') {
+            steps {
+                sh 'python3 -m pip install --break-system-packages torch --index-url https://download.pytorch.org/whl/cpu'
+            }
+        }
+
         stage('Install Dependencies') {
             steps {
                 sh 'python3 -m pip install --break-system-packages -r requirements.txt'

@@ -25,6 +25,9 @@ uploads/
 # Pytest
 .pytest_cache/
 
+# Docker
+*.log
+
 # Operating System
 .DS_Store
 Thumbs.db

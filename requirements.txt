@@ -12,7 +12,7 @@ langchain-community
 langchain-openai
 langchain-google-genai
 langchain-text-splitters
-
+langchain-huggingface
 faiss-cpu
 
 sentence-transformers
@@ -28,6 +28,7 @@ pydantic-settings
 
 passlib[bcrypt]
 python-jose[cryptography]
+email-validator
 
 httpx
 python-magic-bin; platform_system == "Windows"
